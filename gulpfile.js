@@ -272,7 +272,7 @@ gulp.task("deleteimg", function () {
 
 gulp.task("watch", function () {
 	//Следим за изменениями в файлах и директориях и запускаем задачи, если эти изменения произошли
-	gulp.watch("src/sass/**/*.sass", gulp.parallel("scss"));
+	gulp.watch("src/scss/**/*.scss", gulp.parallel("scss"));
 	gulp.watch("src/**/*.html", gulp.parallel("html"));
 	gulp.watch(
 		"src/fonts/**/*.*",
