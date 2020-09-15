@@ -27,7 +27,7 @@ let gulp = require("gulp"),
 gulp.task("scss", function () {
 	//делаем из своего scss-кода css для браузера
 	return gulp
-		.src("src/sass/**/*.sass") //берём все файлы в директории scss и директорий нижнего уровня
+		.src("src/scss/**/*.scss") //берём все файлы в директории scss и директорий нижнего уровня
 		.pipe(sourcemaps.init()) //инициализируем sourcemaps, чтобы он начинал записывать, что из какого файла берётся
 		.pipe(
 			sass({
